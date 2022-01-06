@@ -132,7 +132,7 @@ public class Heartfailure {
                 .layer(4, new OutputLayer.Builder()
                         .nIn(40)
                         .nOut(trainIter.totalOutcomes())
-                        .lossFunction(LossFunctions.LossFunction.MCXENT)
+                        .lossFunction(LossFunctions.LossFunction.XENT)
                         .activation(Activation.SIGMOID)
                         .build())
                 .build();
